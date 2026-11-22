@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>HTML Practice</title>
+  <meta charset="UTF-8">
+  <title>HTML Practice</title>
 </head>
+
 <body>
   <header>
     <h1>Dollcy Jain</h1>
@@ -15,19 +17,23 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="#timetable">Timetable</a></li>
     </ul>
   </nav>
 
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>Hi, I'm Dollcy Jain! I am a CCE student with a strong foundation in C, C++, and web fundamentals. I enjoy tackling logical challenges and am currently diving into Data Structures and Algorithms (DSA) to improve my problem-solving skills. Whether I'm building web pages or practicing competitive programming, I am always eager to learn and push my technical boundaries. </p>
+      <p>Hi, I'm Dollcy Jain! I am a CCE student with a strong foundation in C, C++, and web fundamentals. I enjoy
+        tackling logical challenges and am currently diving into Data Structures and Algorithms (DSA) to improve my
+        problem-solving skills. Whether I'm building web pages or practicing competitive programming, I am always eager
+        to learn and push my technical boundaries. </p>
       <img src="image.jpeg" alt="A portrait of Dollcy Jain" height="200px">
     </section>
 
     <section id="skills">
       <h2>Skills & Goals</h2>
-      
+
       <h3>My Skills</h3>
       <ul>
         <li>HTML and CSS</li>
@@ -44,10 +50,76 @@
         <li>Atleast 15 Question of 900 level of CP-31.</li>
       </ol>
     </section>
-    
+    <!-- This is a Demo Timetable..... As I don't have any timetable. -->
+    <section id="timetable">
+      <h2>Timetable</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Data Structures</td>
+            <td>10:00 AM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Javascript</td>
+            <td>2:00 PM</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Competitive Programming</td>
+            <td>4:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
     <section id="contact">
       <h2>Contact</h2>
       <p>Visit my <a href="https://github.com/Dollcy-Jain" target="_blank">GitHub profile</a>.</p>
+      <form action="#" method="POST">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required minlength="2">
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="reason">Reason for contacting:</label>
+          <select id="reason" name="reason">
+            <option value="networking">Networking</option>
+            <option value="collaboration">Project Collaboration</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <p>Are you a student or recruiter?</p>
+          <input type="radio" id="student" name="role" value="student">
+          <label for="student">Student</label>
+
+          <input type="radio" id="recruiter" name="role" value="recruiter">
+          <label for="recruiter">Recruiter</label>
+        </div>
+
+        <div>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="30" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
   </main>
 
@@ -55,4 +127,5 @@
     <p>&copy; 2026 Dollcy Jain</p>
   </footer>
 </body>
+
 </html>
